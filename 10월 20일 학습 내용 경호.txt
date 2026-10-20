@@ -1,0 +1,21 @@
+
+구글에서 설치하자  // 클로드 학습 //
+
+1)새파일 클릭 //상단바 파일-> 폴더 실행  
+
+2)명령어  irm https://claude.ai/install.ps1 | iex 
+
+3)명령어  claude --version
+
+3-1) 혹시 버전확인이 안되고 에러가 뜰경우 //
+[Environment]::SetEnvironmentVariable("path",
+[Environment]::SetEnvironmentVariable("path", "User") + ";$env:USERPROFILE
+W.local\bin", "User")
+
+==============
+
+통합 세팅 프롬프트 개요
+4)사이트  https://hw5511.github.io/vibe-web/setup/step2
+
+4-1) 통합 세팅 프롬프트 2단계 클릭  중간쯤 붙여넣기란에있는
+명령어 복사 넣기해서 컴퓨터에 있는 브이코드에 입력 
