@@ -1,21 +1,79 @@
+※※※※※ 처음부터 ※※※※※
+구글에서 설치하자  // 
+클로드 설치(로그인필수) // vscode 설치(클로드와 연동확인)
+깃허브 검색(클로드와 연동 명령어진행) 
 
-구글에서 설치하자  // 클로드 학습 //
+
+===========================
+vscode 에서 
 
 1)새파일 클릭 //상단바 파일-> 폴더 실행  
 
 2)명령어  irm https://claude.ai/install.ps1 | iex 
+                                                  (시프트+\)
 
-3)명령어  claude --version
+3)명령어  claude --version (시작시 최신 업데이트 확인)
 
 3-1) 혹시 버전확인이 안되고 에러가 뜰경우 //
 [Environment]::SetEnvironmentVariable("path",
 [Environment]::SetEnvironmentVariable("path", "User") + ";$env:USERPROFILE
 W.local\bin", "User")
 
-==============
 
-통합 세팅 프롬프트 개요
-4)사이트  https://hw5511.github.io/vibe-web/setup/step2
+===================================
+통합 세팅 프롬프트 사전 입력하기 
+4)사이트접속 : https://hw5511.github.io/vibe-web/setup/step2
 
 4-1) 통합 세팅 프롬프트 2단계 클릭  중간쯤 붙여넣기란에있는
-명령어 복사 넣기해서 컴퓨터에 있는 브이코드에 입력 
+명령어 복사 넣기해서 컴퓨터에 있는 vscode 에 입력 
+
+===================================
+구글에 깃허브 검색 (해당 사이드가 명령어 저장 클라우드)
+
+5) 통합 세팅 가이드 3단계 깃허브 백업설정에서 통합 세팅 명령어 
+클로드에 입력 하기 ["설치했어"] 라고 답변이 오면 제대로 작동중 
+
+=====================================
+첫 번째 백업 실습 (6단계) 
+
+혹시라도 명령한파일이 지워질경우 다시 찾아야할때
+1번~ 6번까지 하기 
+======================
+4단계 배포된 상태의 사이트 만들기 
+(혹시 사이트가 열리지않는다면 열리지않는다고 명령어를 넣으면 고쳐줌)
+
+=======================
+터미널 새로만들기
+4단계 순서대로하기
+cd lecture
+
+=========================
+
+해결 방법 (gh CLI 설치)
+
+1. PowerShell에서 아래 명령을 실행해요.
+winget install --id GitHub.cli
+2. 설치가 끝나면 터미널과 Claude Code를 다시 시작해요. 그래야 PATH에 반영돼요.
+3. 아래 명령으로 GitHub 계정에 로그인해요. 브라우저 OAuth 방식이에요.
+gh auth login
+4. gh auth status를 실행해서 로그인됐는지 확인해요.
+
+남은 단계: GitHub 로그인
+-------------------------------
+로그인은 브라우저에서 직접 승인해야 해서 제가 대신 할 수 없어요. 아래 순서로 진행해 주세요.
+
+1. Claude Code와 터미널을 모두 껐다가 다시 켜 주세요. 새 PATH는 다시 시작해야 적용돼요.
+2. 터미널에서 아래 명령을 실행해요.
+gh auth login
+3. 질문이 나오면 차례로 이렇게 선택해요.
+   - GitHub.com
+   - HTTPS
+   - Authenticate Git with your GitHub credentials? → Yes
+   - Login with a web browser
+4. 화면에 나온 8자리 코드를 열린 브라우저에 입력하고 Authorize를 눌러요.
+5. 마지막으로 gh auth status를 실행해서 Logged in to github.com account rkdcjfvx85-code가 나오면 완료예요.
+
+로그인을 마치고 알려주시면 연결 상태를 다시 확인해 드릴게요. 😊
+
+
+

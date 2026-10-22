@@ -27,3 +27,6 @@ Thumbs.db
 # 로그 파일
 *.log
 npm-debug.log*
+
+# 별도 저장소로 관리하는 프로젝트
+ui_test/
